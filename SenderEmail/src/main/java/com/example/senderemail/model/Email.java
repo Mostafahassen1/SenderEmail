@@ -1,12 +1,26 @@
 package com.example.senderemail.model;
 
+
+import com.example.senderemail.annotations.ValidStringArray;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.groups.Default;
+
+import java.util.List;
+
 public class Email {
+
+
 
     private final String body;
 
+
     private final String subject;
 
+
     private final String[] to;
+
 
     /**
      * @param body    represents the body of the email (String)
